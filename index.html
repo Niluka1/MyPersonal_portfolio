@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/df9d42d03a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <!--<li><a href="#">Services</a></li>-->
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        
+        <div class="header-text">
+          <p>Business analyst | Accountant | Frond End Disigner</p>
+          <h1>Hi,I'm <span>Niluka</span><br />Dilhani From Sri lanka</h1>
+        </div>
+        <div class="social-icons">
+          <a style="color: rgb(0, 0, 0);" href="https://www.facebook.com/share/19VrU5JThE/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a style="color: rgb(0, 0, 0);"
+            href="https://www.instagram.com/niludil_/profilecard/?igsh=OHh5NGVwbXZmY3V4"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a style="color: rgb(0, 0, 0);" href="http://www.linkedin.com/in/niluka-dilhani-a88645213"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a style="color: rgba(0, 0, 05);" href="https://github.com/Niluka1"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <!----------about----------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/nd.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              A passionate Web Developer, detail-oriented Accountant, and
+              insightful Business Analyst. With a unique blend of technical and
+              analytical skills, I build smart digital solutions and deliver
+              data-driven results that empower businesses to grow and succeed.
+            </p>
+            <div class="tab-titles">
+              <!--<p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>-->
+              <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('activities')">Activites</p>
+            </div>
+            <!--<div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Business Analyst</span><br />Using data to drive better
+                  business decisions.
+                </li>
+                <li>
+                  <span>Accountant</span><br />Handling financial records with
+                  precision.
+                </li>
+                <li>
+                  <span>UI Design</span><br />Designing clean and visually
+                  appealing interfaces.
+                </li>
+                <li>
+                  <span>Web Development</span><br />Building responsive and
+                  modern websites.
+                </li>
+                <li>
+                  <span>Digital Marketing</span><br />Boosting online presence
+                  with smart strategies.
+                </li>
+              </ul>
+            </div>-->
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li>
+                  <span>2022 - 2025</span><br /><b>BSc. Information technology in
+                  Rajarata University of Sri lanka</b>
+                  <p>Studied key subjects including Data Structures, Operating Systems, Database Systems, Software Engineering, Web Technology, Computer Networks, Embedded Systems, Project Management etc.</p>
+                    
+                </li>
+                <li>
+                  <span>Present</span><br /><b>Institute of Chartered Accountants
+                  of Sri lanka(Cooparete Level)</b>
+                
+                  <p>Completed Business Level II at CA Sri Lanka, with knowledge in Accounting, Auditing, Taxation, and Finance. Currently pursuing the Corporate Level .</p>
+                </li>
+                
+                <li><span>2016-2020</span><br /><b>AAT Sri Lanka</li></b>
+               
+                <p>Diploma in Accounting and Business, Accounting and Finance. Successfully Completion of Diploma in Accounting and Business.</p>
+                
+                <li><span>2021</span><br /><b>Open University of Sri Lanka</li></b>
+                <p>Certificate course in English.</p>
+                <li><span>2018</span><br /><b>Technical College Matale</li></b>
+                <p>Advance Career Skills in English.</p>
+                <li><span>2005-2018</span><br /><b>Sujatha Girls School Matale</li></b>
+                <p>Advance Level in Commerce Stream A|B|B.</p>
+              </ul>
+            </div>
+            <div class="tab-contents" id="activities">
+              <ul>
+                <li>
+                  <span>2022 - 2025</span><br />Badminton team member in
+                  Rajarata University of Sri lanka
+                </li>
+                <li>
+                  <span>Present</span><br />ARICT in Rajarata University of Sri
+                  lanka
+                </li>
+                <li>
+                  <span>2023-2025</span><br />Rotaract Clu in Rajarata
+                  University of Sri lanka
+                </li>
+                <li>
+                  <span>2023-2024</span><br />Zero Plastic Rajarata University
+                  of Sri lanka
+                </li>
+                <li>
+                  <span>2023</span><br />Gavel Clab Rajarata University of Sri
+                  lanka
+                </li>
+              </ul>
+            </div><br><br>
+            <input type="radio" name="skills" id="technical" checked>
+  <input type="radio" name="skills" id="soft">
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <label class="tab" for="technical">Technical Skills</label>
+    <label class="tab" for="soft">Soft Skills</label>
+  </div>
+
+  <!-- Technical Skills Content -->
+  <div class="content" id="tech-content">
+    <h3>Programming Languages</h3>
+    <ul>
+      <li>C</li>
+      <li>C++</li>
+      <li>Python</li>
+    </ul>
+    <h3>Web Technologies</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Node.js</li>
+      <li>React.js</li>
+    </ul>
+    <h3>Tools & Technologies</h3>
+    <ul>
+      <li>Selenium (QA)</li>
+      <li>MS Office Suite</li>
+      <li>Android Studio</li>
+      <li>Visual Studio</li>
+      <li>Jupyter Notebook</li>
+      <li>Colab google</li>
+    </ul>
+  </div>
+
+  <!-- Soft Skills Content -->
+  <div class="content" id="soft-content">
+    <h3>Communication & Leadership</h3>
+    <ul>
+      <li>Communication Skills</li>
+      <li>Leadership Skills</li>
+      <li>Team Collaboration</li>
+      <li>Public Speaking</li>
+    </ul>
+    <h3>Problem Solving</h3>
+    <ul>
+      <li>Problem Solving</li>
+      <li>Critical Thinking</li>
+      <li>Analytical Skills</li>
+      <li>Attention to Detail</li>
+      <li>Reaserch Skill</li>
+    </ul>
+  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------services---------------- -->
+    <!--<div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>web design</h2>
+          </div>
+        </div>
+      </div>-->
+    <!--------------portfolio------------->
+      <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Work</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src="images/p22.jpg">
+              <div class="layer">
+                <h3>Library Mobile App</h3>
+                <p>
+                  A user-friendly Library App developed to organize, search, and access books efficiently for seamless reading and management
+                </p>
+                <!--<a href="#"><i class="fas fa-external-link-alt"></i></a>-->
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/p11.jpg">
+              <div class="layer">
+                <h3>To Do Mobile App</h3>
+                <p>
+                  A secure and personal To-Do mobile app designed for privacy-focused users to manage daily tasks with ease and confidence.
+                </p>
+                <!--<a href="#"><i class="fas fa-external-link-alt"></i></a>-->
+              </div>
+            </div>
+            
+            <div class="work">
+              <img src="images/p3.jpg">
+              <div class="layer">
+                <h3>Phamacy Sysyem Web App</h3>
+                <p>
+                  A complete Pharmacy Management Web App designed to streamline inventory, sales, and prescription handling with efficiency and accuracy.</p>
+                <!--<a href="#"><i class="fas fa-external-link-alt"></i></a>-->
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/p4.jpg">
+              <div class="layer">
+                <h3>Autometed House Planning and Visualization Web App</h3>
+                <p>Generate intelligent floorplans and real-tme 3D house views.</p>
+                <!--<a href="#"><i class="fas fa-external-link-alt"></i></a>-->
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/p5.jpg">
+              <div class="layer">
+                <h3>Portfolio Web app for photography</h3>
+                <p>YA stylish and responsive personal portfolio web app crafted for photographers to showcase their work and attract clients with elegance.</p>
+                <!--<a href="#"><i class="fas fa-external-link-alt"></i></a>-->
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/p6.jpg">
+              <div class="layer">
+                <h3>Portfolio Web app</h3>
+                <p>A personal web portfolio designed to showcase my projects, skills, and professional journey in a modern and interactive way.</p>
+                <!--<a href="#"><i class="fas fa-external-link-alt"></i></a>-->
+              </div>
+            </div>
+            <div class="work">
+              <video src="images/web vedio.mp4" controls></video>
+              <div class="content">
+                <h3>Home made cake Web app</h3>
+                <p>I successfully designed a web page using Figma — building confidence step by step.</p>
+              </div>
+            </div>
+          </div>
+          
+          <a href="#" class="btn">See more</a>
+        </div>
+      </div>
+      <!------- new section-------->
+      <section class="news-section">
+        <h2>Latest <span class="highlight">News</span></h2>
+        <div class="news-card">
+          <img src="images/11.jpg" alt="Notebook">
+          <div class="news-content">
+            <h3>🏆Achieve 5th Place Among 34 Research Projects</h3>
+            <br>
+            <p>Our project, <strong>"Automated House Planning and Visualization System Using Machine Learning"</strong> 🏡🤖, was recognized for its innovation and potential impact. We are thrilled 🎉 to have reached this milestone, and this journey has been an amazing learning experience, pushing the boundaries of machine learning, AI, and real-world problem-solving 🌍.<br>
+              This achievement is a reflection of our teamwork, perseverance, and innovation. We are looking forward to using this experience for future advancements in AI and machine learning 🚀!</p>
+              <br>
+            <p><strong>Research Achievement | Final Year project.</strong></p>
+          </div>
+        </div>
+    
+        <div class="news-card">
+          <img src="images/6.jpeg" alt="Notebook">
+          <div class="news-content">
+            <h3>Badminton Best Player</h3>
+            <br>
+            <p>I am ✨️the Best Player👊 in badminton at the Freshers’ Meet 2024✨️ of Rajarata University of Sri Lanka, Mihinthale. As a leader of my team, I took on the challenge of guiding and inspiring my teammates, fostering teamwork and resilience.
+
+              Beyond the court, I am committed to continuous growth, discipline, and excellence. Always eager to learn, lead, and inspire!
+              .</p>
+              <br>
+            <p><strong>Badminton at the Freshers’ Meet 2024 of Rajarata University of Sri Lanka.</strong></p>
+          </div>
+        </div>
+        <div class="news-card">
+          <img src="images/3.jpeg" alt="Notebook">
+          <div class="news-content">
+            <h3>Champions 3 Years in a Row! 🏸</h3>
+            <br>
+            <p>I Proud to share that we were crowned Badminton Champions at the Faculty Meet of Rajarata University of Sri Lanka for 2023, 2024, and 2025! 💪🎉  
+              So grateful to be part of such a determined and talented team. Here's to dedication, teamwork, and passion leading to victory again and again! 💙💛
+              .</p>
+              <br>
+            <p><strong>Badminton at the Faculty Meet of Rajarata University of Sri Lanka.</strong></p>
+          </div>
+        </div>
+      </section>
+
+    <!------------contact------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p style="color: rgb(12, 11, 12);"><i class="fas fa-paper-plane"></i>nilukakaluwelgoda@gmail.com</p>
+            <p style="color: rgb(12, 11, 12);"><i class="fas fa-phone-square-alt"></i>070 528 5204</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/share/19VrU5JThE/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/niludil_/profilecard/?igsh=OHh5NGVwbXZmY3V4"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="http://www.linkedin.com/in/niluka-dilhani-a88645213"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Niluka1"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="images/Niluka_CV.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg">hello</span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Niluka.<i class="fa-solid fa-heart"></i></p>
+      </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+        for (tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+
+
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbylYuscfWu_5WooYmANLg3mhBZ1AwKmG_MhH8eGjlVIEcZ7uyEJwuAlGXuQB3D5Kb7vAw/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
